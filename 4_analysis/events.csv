@@ -1,0 +1,28 @@
+date,category,hypothesis,valence,description,source
+2022-02-24,territorial_loss,H1,-1,Full-scale Russian invasion begins; major initial territorial losses in South and East,https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine
+2022-04-14,military_tech_win,H3,1,Sinking of the Russian flagship Moskva via domestic Neptune anti-ship missiles,https://en.wikipedia.org/wiki/Sinking_of_the_Moskva
+2022-05-31,us_pressure_statement,H2,-1,Biden NYT Op-Ed capping long-range weapon supply and discouraging strikes inside Russia,https://www.nytimes.com/2022/05/31/opinion/biden-ukraine-russia.html
+2022-09-10,military_tech_win,H3,1,"Kharkiv counteroffensive: Russia withdraws, Ukraine retakes Izium and Kupiansk",https://www.gpb.org/news/2022/09/10/russian-forces-withdraw-the-kharkiv-region-ukraine-pushes-counteroffensive
+2022-11-09,us_pressure_statement,H2,-1,Gen. Mark Milley publicly urges diplomatic negotiation window following Kherson liberation,https://www.bbc.com/news/world-us-canada-63581530
+2022-11-11,military_tech_win,H3,1,Liberation of Kherson city; Russian forces retreat across the Dnipro River,https://en.wikipedia.org/wiki/Liberation_of_Kherson
+2023-05-20,territorial_loss,H1,-1,Fall of Bakhmut following multi-month war of attrition,https://en.wikipedia.org/wiki/Battle_of_Bakhmut
+2023-06-04,military_tech_win,H3,1,Launch of 2023 Zaporizhzhia/Southeastern counteroffensive,https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive
+2023-09-30,us_pressure_statement,H2,-1,US Congress passes short-term funding bill without Ukraine military aid,https://www.npr.org/2023/09/30/1202839419/house-and-senate-race-to-find-agreement-ahead-shutdown-deadline
+2023-11-01,territorial_loss,H1,-1,Zaluzhny Economist interview acknowledging the counteroffensive has reached a stalemate,https://www.economist.com/europe/2023/11/01/ukraines-commander-in-chief-on-the-breakthrough-he-needs
+2024-02-17,territorial_loss,H1,-1,Ukrainian forces withdraw from Avdiivka amid severe artillery ammunition shortages,https://en.wikipedia.org/wiki/Battle_of_Avdiivka_(2023%E2%80%932024)
+2024-03-22,us_pressure_statement,H2,-1,US publicly warns Ukraine against long-range drone strikes on Russian oil refineries,https://www.ft.com/content/98f15b60-bc4d-4d3c-9e57-cbd9fc2e00bc
+2024-08-06,military_tech_win,H3,1,"Ukraine launches surprise Kursk incursion, capturing over 1,000 sq km of Russian territory",https://en.wikipedia.org/wiki/August_2024_Kursk_Oblast_incursion
+2024-09-18,military_tech_win,H3,1,"Ukrainian drone strike destroys the Toropets arsenal, the largest deep strike on Russian ammunition stocks (Tikhoretsk follows on 21 Sep)",https://kyivpost.com/post/40216
+2025-02-14,us_pressure_statement,H2,-1,VP Vance Munich Security Conference speech demanding European burden-sharing and fast talks,https://en.wikipedia.org/wiki/2025_JD_Vance_speech_at_the_Munich_Security_Conference
+2025-02-19,us_pressure_statement,H2,-1,Trump calls Zelensky a dictator without elections on Truth Social,https://foreignpolicy.com/2025/02/19/trump-zelensky-dictator-ukraine-started-war-putin/
+2025-02-28,us_pressure_statement,H2,-1,High-profile Oval Office clash resulting in diplomatic impasse and public disagreement,https://en.wikipedia.org/wiki/2025_Trump%E2%80%93Zelenskyy_Oval_Office_meeting
+2025-03-03,us_pressure_statement,H2,-1,Formal pause instituted on US military assistance shipments and intelligence sharing,https://www.cnn.com/2025/03/03/politics/trump-administration-ukraine-aid
+2025-03-13,territorial_loss,H1,-1,Russia claims recapture of Sudzha in Kursk Oblast,https://kyivindependent.com/russia-claims-to-retake-sudzha-kyiv-hasnt-confirmed/
+2025-06-01,military_tech_win,H3,1,Operation Spiderweb - SBU covert strike destroys strategic bombers at multiple airbases via truck-launched FPV drones,https://en.wikipedia.org/wiki/Operation_Spiderweb
+2025-08-15,us_pressure_statement,H2,-1,Trump-Putin Anchorage summit ends without ceasefire; Trump implies the onus is on Ukraine to cede territory,https://www.cnn.com/2025/08/15/politics/takeaways-trump-putin-summit-alaska
+2025-11-23,us_pressure_statement,H2,-1,US pressures Ukraine in Geneva over 28-point peace plan requiring territorial concessions and permanent NATO exclusion,https://www.washingtonpost.com/world/2025/11/24/ukraine-peace-plan-europe-russia/
+2025-12-01,territorial_loss,H1,-1,Kremlin claims capture of Pokrovsk (disputed by Ukraine),https://aljazeera.com/news/2025/12/2/russia-says-it-captured-pokrovsk-a-key-logistics-hub-in-eastern-ukraine
+2026-01-29,territorial_loss,H1,-1,Myrnohrad mostly under Russian control as the Pokrovsk offensive ends,https://euromaidanpress.com/2026/01/29/russia-controls-most-of-myrnohrad-and-moves-its-commanders-into-the-city-ukrainian-marine-officer-says-maps/
+2026-02-20,military_tech_win,H3,1,Ukraine confirms its southern counteroffensive has retaken about 300 sq km,https://kyivindependent.com/ukraine-liberates-300-square-kilometers-in-southern-counteroffensive-zelensky-tells-afp/
+2026-07-05,us_pressure_statement,H2,-1,"VP Vance calls the 2023 Western-pressured counteroffensive a ""strategic and tactical disaster,"" advises Ukraine stay maximally defensive",https://www.pravda.com.ua/eng/news/2026/07/05/8042501/
+2026-09-15,military_tech_win,H3,1,Ukraine reveals Operation Vivaldi near Lyman (75 sq km cleared),https://pravda.com.ua/eng/news/2026/09/15/8053480

@@ -1,0 +1,33 @@
+# yt-scraper job: "Hope" phase of the Russo-Ukrainian war
+# Dec 1 2022 - May 31 2023: enduring the first winter of grid blackouts
+# while anticipating the arrival of heavy Western armor.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < ukraine_hope_2022_2023.yaml
+
+queries:
+  - text: 烏克蘭戰爭
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 俄烏戰爭
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 烏克蘭電網攻擊
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 巴赫姆特之戰
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 豹2坦克烏克蘭
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 烏克蘭寒冬停電
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+
+max_results_per_query: 8
+state_file: ukraine_hope_2022_2023_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5

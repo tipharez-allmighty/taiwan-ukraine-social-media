@@ -1,0 +1,33 @@
+# yt-scraper job: "Fatigue" phase of the Russo-Ukrainian war
+# Jun 2023 - Dec 2023: summer counteroffensive stalls against heavily
+# mined Russian defense lines; disappointment sets in.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < ukraine_fatigue_2023.yaml
+
+queries:
+  - text: 烏克蘭戰爭
+    published_after: "2023-06-01T00:00:00Z"
+    published_before: "2024-01-01T00:00:00Z"
+  - text: 俄烏戰爭
+    published_after: "2023-06-01T00:00:00Z"
+    published_before: "2024-01-01T00:00:00Z"
+  - text: 烏克蘭反攻
+    published_after: "2023-06-01T00:00:00Z"
+    published_before: "2024-01-01T00:00:00Z"
+  - text: 扎波羅熱反攻
+    published_after: "2023-06-01T00:00:00Z"
+    published_before: "2024-01-01T00:00:00Z"
+  - text: 俄羅斯地雷防線
+    published_after: "2023-06-01T00:00:00Z"
+    published_before: "2024-01-01T00:00:00Z"
+  - text: 巴赫姆特陷落
+    published_after: "2023-06-01T00:00:00Z"
+    published_before: "2024-01-01T00:00:00Z"
+
+max_results_per_query: 8
+state_file: ukraine_fatigue_2023_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5

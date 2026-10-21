@@ -1,0 +1,33 @@
+# yt-scraper job: "Anxiety" phase of the Russo-Ukrainian war
+# Jan 2024 - Oct 2024: critical ammunition shortages driven by U.S.
+# congressional delays; loss of Avdiivka; exhausting war of attrition.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < ukraine_anxiety_2024.yaml
+
+queries:
+  - text: 烏克蘭戰爭
+    published_after: "2024-01-01T00:00:00Z"
+    published_before: "2024-11-01T00:00:00Z"
+  - text: 俄烏戰爭
+    published_after: "2024-01-01T00:00:00Z"
+    published_before: "2024-11-01T00:00:00Z"
+  - text: 阿夫迪夫卡陷落
+    published_after: "2024-01-01T00:00:00Z"
+    published_before: "2024-11-01T00:00:00Z"
+  - text: 美國軍援延遲烏克蘭
+    published_after: "2024-01-01T00:00:00Z"
+    published_before: "2024-11-01T00:00:00Z"
+  - text: 烏克蘭彈藥短缺
+    published_after: "2024-01-01T00:00:00Z"
+    published_before: "2024-11-01T00:00:00Z"
+  - text: 烏克蘭消耗戰
+    published_after: "2024-01-01T00:00:00Z"
+    published_before: "2024-11-01T00:00:00Z"
+
+max_results_per_query: 8
+state_file: ukraine_anxiety_2024_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5

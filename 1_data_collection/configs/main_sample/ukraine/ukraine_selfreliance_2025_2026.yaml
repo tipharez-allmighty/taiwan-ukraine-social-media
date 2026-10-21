@@ -1,0 +1,34 @@
+# yt-scraper job: "Self-Reliance" phase of the Russo-Ukrainian war
+# Nov 2025 - present: acceptance of a long conflict; pivot to European
+# financial backing and native long-range drone campaigns; over 60%
+# prepared to endure.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < ukraine_selfreliance_2025_2026.yaml
+
+queries:
+  - text: 烏克蘭戰爭
+    published_after: "2025-11-01T00:00:00Z"
+    published_before: "2026-08-06T00:00:00Z"
+  - text: 俄烏戰爭
+    published_after: "2025-11-01T00:00:00Z"
+    published_before: "2026-08-06T00:00:00Z"
+  - text: 歐洲軍援烏克蘭
+    published_after: "2025-11-01T00:00:00Z"
+    published_before: "2026-08-06T00:00:00Z"
+  - text: 烏克蘭遠程無人機
+    published_after: "2025-11-01T00:00:00Z"
+    published_before: "2026-08-06T00:00:00Z"
+  - text: 烏克蘭持久戰
+    published_after: "2025-11-01T00:00:00Z"
+    published_before: "2026-08-06T00:00:00Z"
+  - text: 烏克蘭自主武器生產
+    published_after: "2025-11-01T00:00:00Z"
+    published_before: "2026-08-06T00:00:00Z"
+
+max_results_per_query: 8
+state_file: ukraine_selfreliance_2025_2026_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5

@@ -1,0 +1,5 @@
+test,window,metric,n,pre,post,t,df,p
+US pressure (merged episodes) -> disappointed with US,10,count,8,0.7625,2.0,0.9061630025018592,7,0.3949698211854982
+US pressure (merged episodes) -> disappointed with US,10,share,8,8.684846734039864,8.844470686845899,0.05199531613840433,7,0.9599851001464347
+US pressure (merged episodes) -> disappointed with US,20,count,8,0.61875,1.4642857142857144,1.1876012360749786,7,0.27372119776210013
+US pressure (merged episodes) -> disappointed with US,20,share,8,9.518126982294692,10.180496805270874,0.22780172229331166,7,0.8263112665220154

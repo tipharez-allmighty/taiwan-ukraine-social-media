@@ -1,0 +1,23 @@
+# secrets: never commit API keys
+.env
+*.env
+!.env.example
+
+# SQLite side files (the .db files themselves ARE part of the repo)
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# logs and local output
+*.log
+5_results/other_figures/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

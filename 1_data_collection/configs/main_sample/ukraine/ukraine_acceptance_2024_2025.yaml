@@ -1,0 +1,33 @@
+# yt-scraper job: "Acceptance" phase of the Russo-Ukrainian war
+# Nov 2024 - Jan 2025: escalating Russian strikes on infrastructure;
+# Kursk offensive boost fades; growing openness to a diplomatic freeze.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < ukraine_acceptance_2024_2025.yaml
+
+queries:
+  - text: 烏克蘭戰爭
+    published_after: "2024-11-01T00:00:00Z"
+    published_before: "2025-02-01T00:00:00Z"
+  - text: 俄烏戰爭
+    published_after: "2024-11-01T00:00:00Z"
+    published_before: "2025-02-01T00:00:00Z"
+  - text: 俄羅斯基礎設施攻擊
+    published_after: "2024-11-01T00:00:00Z"
+    published_before: "2025-02-01T00:00:00Z"
+  - text: 庫爾斯克攻勢
+    published_after: "2024-11-01T00:00:00Z"
+    published_before: "2025-02-01T00:00:00Z"
+  - text: 烏克蘭停火談判
+    published_after: "2024-11-01T00:00:00Z"
+    published_before: "2025-02-01T00:00:00Z"
+  - text: 烏克蘭電力設施攻擊
+    published_after: "2024-11-01T00:00:00Z"
+    published_before: "2025-02-01T00:00:00Z"
+
+max_results_per_query: 8
+state_file: ukraine_acceptance_2024_2025_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5

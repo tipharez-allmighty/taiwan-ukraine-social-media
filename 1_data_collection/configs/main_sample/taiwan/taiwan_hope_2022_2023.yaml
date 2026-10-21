@@ -1,0 +1,44 @@
+# yt-scraper job: "Hope" phase (Taiwan discourse mirrored to the
+# Russo-Ukrainian war timeline)
+# Dec 1 2022 - May 31 2023: enduring the first winter of grid blackouts
+# while anticipating the arrival of heavy Western armor.
+#
+# NOTE: unlike the ukraine_*.yaml jobs (one state_file per phase), all
+# taiwan_*.yaml jobs in this folder share a single state_file so results
+# accumulate together.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < taiwan/taiwan_hope_2022_2023.yaml
+
+queries:
+  - text: 今日烏克蘭明日台灣
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 烏克蘭台灣借鏡
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 美國棄台
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 美國協防台灣
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 台灣自我防衛
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 不對稱作戰
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 無人機戰爭
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+  - text: 美出兵防衛台灣
+    published_after: "2022-12-01T00:00:00Z"
+    published_before: "2023-06-01T00:00:00Z"
+
+max_results_per_query: 8
+state_file: taiwan_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5

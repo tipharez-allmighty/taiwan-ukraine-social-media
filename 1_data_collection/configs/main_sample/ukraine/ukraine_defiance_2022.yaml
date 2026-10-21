@@ -1,0 +1,33 @@
+# yt-scraper job: "Defiance" phase of the Russo-Ukrainian war
+# Feb 24 2022 - Nov 2022: invasion -> unity -> defense of Kyiv -> liberation
+# of Kharkiv & Kherson.
+#
+# Run with:
+#   (run from the folder where the state_file should be written)
+#   yt-scraper run -f yaml < ukraine_defiance_2022.yaml
+
+queries:
+  - text: 烏克蘭戰爭
+    published_after: "2022-02-24T00:00:00Z"
+    published_before: "2022-12-01T00:00:00Z"
+  - text: 俄烏戰爭
+    published_after: "2022-02-24T00:00:00Z"
+    published_before: "2022-12-01T00:00:00Z"
+  - text: 基輔保衛戰
+    published_after: "2022-02-24T00:00:00Z"
+    published_before: "2022-12-01T00:00:00Z"
+  - text: 哈爾科夫解放
+    published_after: "2022-02-24T00:00:00Z"
+    published_before: "2022-12-01T00:00:00Z"
+  - text: 赫爾松解放
+    published_after: "2022-02-24T00:00:00Z"
+    published_before: "2022-12-01T00:00:00Z"
+  - text: 烏克蘭反攻
+    published_after: "2022-02-24T00:00:00Z"
+    published_before: "2022-12-01T00:00:00Z"
+
+max_results_per_query: 8
+state_file: ukraine_defiance_2022_storage.db
+max_pages: 1
+max_threads: 10
+max_comments: 5
