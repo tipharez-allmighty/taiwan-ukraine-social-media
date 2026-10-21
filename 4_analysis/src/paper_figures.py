@@ -22,6 +22,7 @@ MM = 1 / 25.4
 WIDE = 180 * MM
 
 BLUE, ORANGE = "#2a78d6", "#eb6834"
+VIOLET, AQUA = "#6250d6", "#1baf7a"  # Fig. 2 only, so colours keep one meaning per figure
 INK, INK_2, GRID = "#0b0b0b", "#52514e", "#e4e3df"
 
 LABEL_NAMES = {
@@ -97,11 +98,11 @@ def fig2_cooccurrence(con):
         "CAST(supportive_taiwan AS INT) s FROM human_rows_excl_simplified_zh"
     ).fetchdf()
     targets = [("critical_taiwan", "c"), ("supportive_taiwan", "s")]
-    x = np.arange(len(targets))
-    w = 0.34
+    y = np.arange(len(targets))[::-1]
+    h = 0.36
 
-    fig, ax = plt.subplots(figsize=(88 * MM, 65 * MM))
-    for offset, dval, color, name in [(-w / 2 - 0.02, 1, ORANGE, "Disappointed with the US"), (w / 2 + 0.02, 0, BLUE, "Not disappointed with the US")]:
+    fig, ax = plt.subplots(figsize=(WIDE, 55 * MM))
+    for offset, dval, color, name in [(h / 2 + 0.02, 1, VIOLET, "Disappointed with the US"), (-h / 2 - 0.02, 0, AQUA, "Not disappointed with the US")]:
         sub = df[df["d"] == dval]
         vals, lo, hi = [], [], []
         for _, col in targets:
@@ -110,17 +111,17 @@ def fig2_cooccurrence(con):
             vals.append(k / n * 100)
             lo.append(k / n * 100 - a * 100)
             hi.append(b * 100 - k / n * 100)
-        ax.bar(x + offset, vals, w, color=color, label=f"{name} (n = {len(sub):,})")
-        ax.errorbar(x + offset, vals, yerr=[lo, hi], fmt="none", ecolor=INK, elinewidth=0.8, capsize=2)
-        for xi, v in zip(x + offset, vals):
-            ax.text(xi, v + max(hi) + 1, f"{v:.1f}", ha="center", fontsize=7, color=INK_2)
-    ax.set_xticks(x, [LABEL_NAMES[t] for t, _ in targets])
-    ax.tick_params(axis="x", length=0)
-    ax.set_ylabel("Share of comments (%)")
-    ax.set_ylim(0, 62)
-    ax.yaxis.grid(True, color=GRID, linewidth=0.5)
+        ax.barh(y + offset, vals, h, color=color, label=f"{name} (n = {len(sub):,})")
+        ax.errorbar(vals, y + offset, xerr=[lo, hi], fmt="none", ecolor=INK_2, elinewidth=0.7, capsize=2)
+        for yi, v, e in zip(y + offset, vals, hi):
+            ax.text(v + e + 0.6, yi, f"{v:.1f}", va="center", fontsize=7, color=INK_2)
+    ax.set_yticks(y, [LABEL_NAMES[t] for t, _ in targets])
+    ax.tick_params(axis="y", length=0)
+    ax.set_xlabel("Share of comments with the label (%)")
+    ax.set_xlim(0, 50)
+    ax.xaxis.grid(True, color=GRID, linewidth=0.5)
     ax.set_axisbelow(True)
-    ax.legend(frameon=False, loc="upper right", fontsize=7)
+    ax.legend(frameon=False, loc="lower right")
     save(fig, "fig2_cooccurrence")
 
 
