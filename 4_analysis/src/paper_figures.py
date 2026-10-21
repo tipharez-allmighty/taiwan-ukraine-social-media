@@ -68,7 +68,7 @@ def wilson(k, n, z=1.96):
 
 def fig1_label_shares(con):
     df = con.execute(
-        "SELECT is_simplified_zh, " + ", ".join(f"AVG(CAST({l} AS INT))*100 AS {l}" for l in LABEL_NAMES)
+        "SELECT is_simplified_zh, COUNT(*) AS n, " + ", ".join(f"AVG(CAST({l} AS INT))*100 AS {l}" for l in LABEL_NAMES)
         + " FROM human_rows GROUP BY 1"
     ).fetchdf().set_index("is_simplified_zh")
     main, simp = df.loc[False], df.loc[True]
@@ -77,8 +77,8 @@ def fig1_label_shares(con):
     h = 0.36
 
     fig, ax = plt.subplots(figsize=(WIDE, 70 * MM))
-    ax.barh(y + h / 2 + 0.02, [main[l] for l in labels], h, color=BLUE, label="Main sample (Traditional Chinese, n = 16,810)")
-    ax.barh(y - h / 2 - 0.02, [simp[l] for l in labels], h, color=ORANGE, label="Simplified Chinese (n = 7,782)")
+    ax.barh(y + h / 2 + 0.02, [main[l] for l in labels], h, color=BLUE, label=f"Main sample (Traditional Chinese, n = {int(main['n']):,})")
+    ax.barh(y - h / 2 - 0.02, [simp[l] for l in labels], h, color=ORANGE, label=f"Simplified Chinese (n = {int(simp['n']):,})")
     for yi, l in zip(y, labels):
         ax.text(main[l] + 0.4, yi + h / 2 + 0.02, f"{main[l]:.1f}", va="center", fontsize=7, color=INK_2)
         ax.text(simp[l] + 0.4, yi - h / 2 - 0.02, f"{simp[l]:.1f}", va="center", fontsize=7, color=INK_2)
