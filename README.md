@@ -3,7 +3,6 @@
 Data, labels and code for the paper. Everything needed to check or rerun the results is in this repository.
 
 - **Scraper** used to collect the comments: https://anonymous.4open.science/r/youtube-scraper-88F7/
-- **This repository:** https://github.com/tipharez-allmighty/taiwan-ukraine-social-media
 
 ---
 
